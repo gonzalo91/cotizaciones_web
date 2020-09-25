@@ -14,10 +14,7 @@
                 </li>
                 <li class="nav-item <?php echo ( isset($_GET['p']) && $_GET["p"] === "editar_ajustes") ? 'active' : '' ?>">
                     <a class="nav-link" href="<?php echo BASE_URL ?>/?p=editar_ajustes">Ajustes</a>
-                </li>
-                <li class="nav-item <?php echo ( isset($_GET['p']) && $_GET["p"] === "creditos") ? 'active' : '' ?>">
-                    <a class="nav-link" href="<?php echo BASE_URL ?>/?p=creditos">Acerca de</a>
-                </li>
+                </li>                
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo BASE_URL ?>/?p=logout">Salir</a>
                 </li>

@@ -19,8 +19,7 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
             <div class="form-group">
                 <label for="razonSocial">Nombre o razón social</label>
                 <input value="<?php echo htmlentities($cliente->razonSocial) ?>" autofocus name="razonSocial"
-                       autocomplete="off" required type="text" class="form-control" id="razonSocial"
-                       placeholder="Por ejemplo: Luis Cabrera Benito">
+                       autocomplete="off" required type="text" class="form-control" id="razonSocial"                       >
             </div>
             <button type="submit" class="btn btn-primary">Guardar</button>
             <a class="btn btn-success" href="<?php echo BASE_URL ?>/?p=clientes">&larr; Volver</a>

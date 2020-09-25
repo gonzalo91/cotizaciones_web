@@ -42,8 +42,7 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
 </div>
 
 <form action="" method="GET">
-    <div class="row">    
-        
+    <div class="row">            
             <div class="col-sm-3">         
                 <label for="from">Desde</label>
                 <input required type="text" id="from" name="from" value="<?php echo $from; ?>">            
@@ -61,8 +60,7 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
             <div class="col-sm-1">
                 <br>
                 <button class="btn btn-primary">Buscar</button>                        
-            </div>
-        
+            </div>    
     </div>
 </form>    
 <hr>
