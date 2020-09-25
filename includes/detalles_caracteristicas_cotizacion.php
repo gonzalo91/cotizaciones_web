@@ -127,7 +127,7 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
                 <div class="col-sm-8">
                     <h3>Características</h3>
                     <div class="alert alert-info">
-                        <p>Las cosas que ayudan a describir la cotización</p>
+                        <p>Ayudan a describir la cotización</p>
                     </div>
                     <div class="table-responsive">
                         <table class="table table-striped">
