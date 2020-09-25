@@ -71,7 +71,7 @@ from caracteristicas_cotizaciones
     }
 
     public static function agregarServicio($idCotizacion, $servicio, $costo, $tiempoEnMinutos, $multiplicador)
-    {
+    {        
         $bd = BD::obtener();
         $sentencia = $bd->prepare("insert into servicios_cotizaciones (idCotizacion, servicio, costo, tiempoEnMinutos, multiplicador)
         values ((select id from cotizaciones where cotizaciones.idUsuario = ? and cotizaciones.id = ?), ?, ?, ?, ?);");

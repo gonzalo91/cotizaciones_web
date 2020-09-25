@@ -72,5 +72,9 @@ if (SesionService::obtenerIdUsuarioLogueado() !== NULL) {
 # Ahora la vista
 include_once BASE_PATH . "/encabezado.php";
 include_once BASE_PATH . "/navegacion.php";
+
 include_once BASE_PATH . "/includes/" . $pagina . ".php";
+
+
+
 include_once BASE_PATH . "/pie.php";

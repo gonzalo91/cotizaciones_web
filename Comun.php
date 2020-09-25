@@ -10,7 +10,7 @@ class Comun
          * Guardar los valores de ENV en la memoria RAM cuyo período de vida será el mismo que el del script
          * Así, en múltiples llamadas a ENV, sólo la primera vez será leído del disco duro, la segunda desde
          * la constante
-         * */
+         * */        
         if (defined("_ENV_CACHE")) {
             $configuraciones = _ENV_CACHE;
         } else {

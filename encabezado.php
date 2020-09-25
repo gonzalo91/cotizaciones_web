@@ -36,6 +36,8 @@
     <title>Generador de cotizaciones y presupuestos | Parzibyte's apps</title>
     <link rel="stylesheet" href="<?php echo BASE_URL ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>/css/font-awesome.min.css">
+    
+
     <style>
         /*Estilos tomados de https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/*/
         html {
