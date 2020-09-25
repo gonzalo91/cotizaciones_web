@@ -178,6 +178,14 @@ $tokenCSRF = Utiles::obtenerTokenCSRF();
                     </form>
                 </div>
             </div>
+            <div class="row justify-content-end">
+                    <div class="col-sm-4">
+                        <a class="btn btn-info" href="<?php echo BASE_URL ?>/?p=imprimir_cotizacion&id=<?php echo $_GET["id"]; ?>">
+                            Imprimir <i class="fa fa-print"></i>
+                        </a>
+                    </div>  
+                    
+            </div>
         </div>
     </div>
 </div>
