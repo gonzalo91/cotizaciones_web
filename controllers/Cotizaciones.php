@@ -122,11 +122,39 @@ from caracteristicas_cotizaciones
     public static function todas()
     {
         $bd = BD::obtener();
-        $sentencia = $bd->prepare("select
-            cotizaciones.id, clientes.razonSocial, cotizaciones.descripcion, cotizaciones.fecha
-            from clientes inner join cotizaciones
-            on cotizaciones.idCliente = clientes.id and cotizaciones.idUsuario = ?;");
+        $sentencia = $bd->prepare("
+            SELECT
+                cotizaciones.id, clientes.razonSocial, cotizaciones.descripcion, cotizaciones.fecha
+            FROM clientes 
+            INNER JOIN cotizaciones
+                on cotizaciones.idCliente = clientes.id 
+                    and cotizaciones.idUsuario = ?;");
         $sentencia->execute([SesionService::obtenerIdUsuarioLogueado()]);
+        return $sentencia->fetchAll(PDO::FETCH_OBJ);
+    }
+
+    public static function filterByDateAndDescription($from, $to, $description = '')
+    {
+        $bd = BD::obtener();
+
+        $sql = "SELECT
+                cotizaciones.id, clientes.razonSocial, cotizaciones.descripcion, cotizaciones.fecha
+            FROM clientes 
+            INNER JOIN cotizaciones
+                on cotizaciones.idCliente = clientes.id 
+                    and cotizaciones.idUsuario = ?
+            WHERE cotizaciones.fecha BETWEEN ? AND ?";
+
+        $params = [SesionService::obtenerIdUsuarioLogueado(), $from, $to];
+
+        if(! empty($description)){
+            $params[] = $description;
+            $sql .= ' AND cotizaciones.descripcion LIKE CONCAT("%", ?, "%")';
+        }
+
+        $sentencia = $bd->prepare($sql);        
+        $sentencia->execute($params);
+
         return $sentencia->fetchAll(PDO::FETCH_OBJ);
     }
 

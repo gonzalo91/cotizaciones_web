@@ -17,27 +17,17 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="twitter:image"
-          content="https://parzibyte.me/blog/wp-content/uploads/2019/01/Sistema-web-para-cotizaciones-y-presupuestos.png"/>
-    <meta name="twitter:description"
-          content="Aplicación web para cotizaciones y presupuestos. Gestiona clientes, costos y tiempos"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="description"
-          content="Aplicación web para cotizaciones y presupuestos. Gestiona clientes, costos y tiempos">
-    <meta property="og:image"
-          content="https://parzibyte.me/blog/wp-content/uploads/2019/01/Sistema-web-para-cotizaciones-y-presupuestos.png"/>
-    <meta property="og:locale" content="es_LA"/>
-    <meta property="og:url" content="https://www.parzibyte.me/apps/cotizaciones"/>
-    <meta property="og:site_name" content="parzibyte.me"/>
-    <meta property="og:title" content="Generador de cotizaciones y presupuestos | Parzibyte's apps"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    
     <meta property="og:description"
           content="Aplicación web para cotizaciones y presupuestos. Gestiona clientes, costos y tiempos"/>
-    <title>Generador de cotizaciones y presupuestos | Parzibyte's apps</title>
+    <title>Generador de cotizaciones y presupuestos</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>/css/font-awesome.min.css">
     
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style>
         /*Estilos tomados de https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/*/
         html {
