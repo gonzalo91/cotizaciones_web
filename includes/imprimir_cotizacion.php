@@ -93,11 +93,7 @@ $ajustes = Ajustes::obtener();
         </div>
     </div>
     <div class="row d-print-block d-sm-none">
-        <hr>
-        <div class="col-sm">
-            Cotización creada en línea. Crea tus cotizaciones y presupuestos online, totalmente gratis:
-            <strong>bit.ly/cotizaciones_online</strong>
-        </div>
+        <hr>        
     </div>
     <div class="row">
         <div class="col-sm">
