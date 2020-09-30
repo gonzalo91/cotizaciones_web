@@ -11,6 +11,14 @@ $servicios = Cotizaciones::serviciosPorId($_GET["id"]);
 $caracteristicas = Cotizaciones::caracteristicasPorId($_GET["id"]);
 $ajustes = Ajustes::obtener();
 ?>
+<style type="text/css" media="print">
+    @page 
+    {
+        size: auto;   /* auto is the initial value */
+        margin: 0mm;  /* this affects the margin in the printer settings */
+    }
+</style>
+
 <div id="app">
     <div class="row">
         <div class="col-sm">
